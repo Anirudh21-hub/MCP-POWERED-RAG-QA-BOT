@@ -160,3 +160,24 @@ print(response)
 # Expected output: "The main topic is related to..."
 ```
 
+# Challenges
+ Handling multiple file formats consistently: Each file type (PDF, PPTX, DOCX, CSV, TXT/Markdown) comes with its own structure and parsing issues. Ensuring that all documents are processed uniformly without losing important data was a major challenge.
+
+ Ensuring accurate chunking and embeddings: Large documents had to be broken into smaller chunks for retrieval. Designing the right chunk size and overlap was tricky, as poor chunking could lead to loss of context or irrelevant results during search.
+
+ Designing structured MCP messages for agent communication: Since agents communicate using MCP, creating a consistent message format that could carry all necessary information (query, context, results) required careful planning and debugging.
+
+<img width="4477" height="296" alt="image" src="https://github.com/user-attachments/assets/cd115528-7f2a-4ef2-a5c0-aa350f04a283" />
+
+# Future Improvements
+ Add support for image-based documents using OCR: Currently, only text-based documents are supported. Extending the system with OCR (Optical Character Recognition) would allow it to process scanned images or photos of documents.
+
+ Integrate advanced embedding models (OpenAI, HuggingFace, etc.): Using stronger embedding models could significantly improve retrieval accuracy, especially for complex queries or technical documents.
+
+ Extend the architecture with more specialized agents: Additional agents like a SummarizerAgent (to generate concise summaries) or PlannerAgent (to decide workflow steps) could make the system more powerful and flexible.
+.
+
+<img width="6540" height="540" alt="image" src="https://github.com/user-attachments/assets/569a84a6-00c3-4808-95ee-89b592462730" />
+
+
+
